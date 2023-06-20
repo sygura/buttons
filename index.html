@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анимация</title>
+    <style>
+        .container {
+            border: 3px dashed darkmagenta;
+            padding: 50px;
+            background-color: #f1ade4;
+            border-radius: 15px;
+        }
+
+        .container2 {
+            border: 1px solid darkmagenta;
+            background-color: #f9dcf4;
+            margin-bottom: 50px;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #d73fb9;
+            border: 3px solid rgb(98, 1, 98);
+            border-radius: 5px;
+            padding: 10px;
+            color: #f8f2f7;
+            transition: color.2s, background-color 1s, box-shadow 3s;
+            margin: 20px;
+        }
+
+        .button:hover {
+            color: #a70483;
+            background-color: #2c0d27;
+            box-shadow: 0px 4px 33px #f8f2f7;
+        }
+
+        .time {
+            transition-timing-function: linear;
+        }
+
+        .time-ease {
+            transition-timing-function: ease;
+        }
+
+        .time-ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .time-ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .time-ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        .time-cubic {
+            transition-timing-function: cubic-bezier(.17, .67, .83, .67);
+        }
+
+        .transform-translate {
+            transform: 2s;
+        }
+
+        .transform-translate:hover {
+            transform: translate(50px)
+        }
+
+        .transform-scale:hover {
+            transform: scale(2)
+        }
+
+        .transform-skew:hover {
+            transform: skewY(-20deg);
+        }
+
+        .transform-rotate:hover {
+            transform: rotate(-360deg);
+            transition: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Анимация</h1>
+    <div class="container">
+        <div class="container2">
+            <h2 style="text-align: center;">transition</h2>
+            <button class="button">Кнопка transition</button>
+        </div>
+        <div class="container2">
+            <h2 style="text-align: center;">transition-timing-function</h2>
+            <button class="button time">Кнопка linear</button>
+            <button class="button time-ease">Кнопка ease</button>
+            <button class="button time-ease-in">Кнопка ease-in</button>
+            <button class="button time-ease-out">Кнопка ease-out</button>
+            <button class="button time-ease-in-out">Кнопка ease-in-out</button>
+            <button class="button time-cubic">Кнопка cubic</button>
+        </div>
+        <div class="container2">
+            <h2 style="text-align: center;">transform</h2>
+            <button class="button transform-translate">Кнопка transform-translate</button>
+            <button class="button transform-scale">Кнопка transform-scale</button>
+            <button class="button transform-skew">Кнопка transform-skew</button>
+            <button class="button transform-rotate">Кнопка transform-rotate</button>
+            <button class="button transform-rotate">Кнопка transform-rotate</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
